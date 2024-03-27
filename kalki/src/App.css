@@ -11,6 +11,7 @@ section{
   margin: 16px;
   display: flex;
   gap: 16px;
+  background-color: brown;
 }
 
 

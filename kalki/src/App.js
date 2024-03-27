@@ -11,6 +11,8 @@ function App() {
           <Product name="ParachuteOil" price="156/-" expiry="april 06 2023"/>
           <Product name="GingerOil" price="156/-" expiry="sep 06 2024"/>
           <Product name="FlourOil" price="156/-" expiry="aug 06 2022"/>
+          <Product name="MintOil" price="556/-" expiry="may 01 2022"/>
+
         </section>
 
 
@@ -22,11 +24,11 @@ function App() {
 }
 
 
-function Product(props) {
+function Product({ name, price, expiry }) {
   return <div className="product">
-    <h2>{props.name}</h2>
-    <p>{props.price}</p>
-    <p>{props.expiry}</p>
+    <h2>{name}</h2>
+    <p>{price}</p>
+    <p>{expiry}</p>
   </div>
 
 
